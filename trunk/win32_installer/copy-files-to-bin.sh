@@ -48,7 +48,7 @@ cd $DIST
  tar cf - \
      plugins/platforms/qwindows.dll) | tar xf -
 cd $WIN/lib/bin
-cp libgig-7.dll libakai-0.dll libgigedit-3.dll liblinuxsampler-4.dll $DIST
+cp libgig-8.dll libakai-0.dll libgigedit-4.dll liblinuxsampler-5.dll $DIST
 cp $WIN/lib/vst/LinuxSampler.dll $DIST
 mkdir -p $DIST/plugins
 cp $WIN/lib/linuxsampler/plugins/libgigeditlinuxsamplerplugin.dll \
@@ -111,7 +111,7 @@ cp rifftree.exe dlsdump.exe gigdump.exe gigextract.exe gigmerge.exe \
     sf2dump.exe sf2extract.exe linuxsampler.exe \
     $DIST
 cd $WIN/lib/bin
-cp libgig-7.dll libakai-0.dll liblinuxsampler-4.dll $DIST
+cp libgig-8.dll libakai-0.dll liblinuxsampler-5.dll $DIST
 cp $WIN/lib/vst/LinuxSampler.dll $DIST
 
 
@@ -150,7 +150,7 @@ cp libgcc_s_seh-1.dll libwinpthread-1.dll libstdc++-6.dll \
    libpixman-1-0.dll libsigc-2.0-0.dll \
    $DIST
 cd $WIN/lib/bin
-cp libgig-7.dll libakai-0.dll libgigedit-3.dll liblinuxsampler-4.dll $DIST
+cp libgig-8.dll libakai-0.dll libgigedit-4.dll liblinuxsampler-5.dll $DIST
 cp $WIN/lib/vst/LinuxSampler.dll $DIST
 mkdir -p $DIST/plugins
 cp $WIN/lib/linuxsampler/plugins/libgigeditlinuxsamplerplugin.dll \
