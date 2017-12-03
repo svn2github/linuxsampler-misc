@@ -93,7 +93,7 @@ VIAddVersionKey /LANG=${LANG_ENGLISH} "ProductName" "all-in-one installer"
 VIAddVersionKey /LANG=${LANG_ENGLISH} "Comments" "http://linuxsampler.org"
 VIAddVersionKey /LANG=${LANG_ENGLISH} "CompanyName" "The LinuxSampler Project"
 VIAddVersionKey /LANG=${LANG_ENGLISH} "LegalTrademarks" ""
-VIAddVersionKey /LANG=${LANG_ENGLISH} "LegalCopyright" "© 2003-2016 The LinuxSampler Project"
+VIAddVersionKey /LANG=${LANG_ENGLISH} "LegalCopyright" "© 2003-2017 The LinuxSampler Project"
 VIAddVersionKey /LANG=${LANG_ENGLISH} "FileDescription" "LinuxSampler Installer (${RELEASE_DATE})"
 VIAddVersionKey /LANG=${LANG_ENGLISH} "FileVersion" "0.0.0"
 
@@ -291,7 +291,7 @@ Section "LinuxSampler ${LINUXSAMPLER_VERSION}" SecLinuxSampler
   linuxsampler64:
   SetOutPath "$INSTDIR\${SUBDIR_64_BIT}"
   File bin\64\linuxsampler.exe
-  File bin\64\liblinuxsampler-4.dll
+  File bin\64\liblinuxsampler-5.dll
   File bin\64\libsqlite3-0.dll
   SetOutPath $vstPluginPath64
   File /oname=LinuxSampler64.dll bin\64\LinuxSampler.dll
@@ -305,7 +305,7 @@ Section "LinuxSampler ${LINUXSAMPLER_VERSION}" SecLinuxSampler
   linuxsampler686sse:
   SetOutPath "$INSTDIR\${SUBDIR_32_BIT}"
   File bin\686sse\linuxsampler.exe
-  File bin\686sse\liblinuxsampler-4.dll
+  File bin\686sse\liblinuxsampler-5.dll
   File bin\686\libsqlite3-0.dll
   SetOutPath $vstPluginPath
   File /oname=LinuxSampler32.dll bin\686sse\LinuxSampler.dll
@@ -314,7 +314,7 @@ Section "LinuxSampler ${LINUXSAMPLER_VERSION}" SecLinuxSampler
   linuxsampler686:
   SetOutPath "$INSTDIR\${SUBDIR_32_BIT}"
   File bin\686\linuxsampler.exe
-  File bin\686\liblinuxsampler-4.dll
+  File bin\686\liblinuxsampler-5.dll
   File bin\686\libsqlite3-0.dll
   SetOutPath $vstPluginPath
   File /oname=LinuxSampler32.dll bin\686\LinuxSampler.dll
@@ -405,7 +405,7 @@ Section "gigedit ${GIGEDIT_VERSION}" Secgigedit
   gigedit64:
   SetOutPath "$INSTDIR\${SUBDIR_64_BIT}"
   File bin\64\gigedit.exe
-  File bin\64\libgigedit-3.dll
+  File bin\64\libgigedit-4.dll
   SetOutPath "$INSTDIR\${SUBDIR_64_BIT}\plugins"
   File bin\64\plugins\libgigeditlinuxsamplerplugin.dll
   SetOutPath "$INSTDIR\${SUBDIR_64_BIT}"
@@ -454,7 +454,7 @@ Section "gigedit ${GIGEDIT_VERSION}" Secgigedit
   gigedit686:
   SetOutPath "$INSTDIR\${SUBDIR_32_BIT}"
   File bin\686\gigedit.exe
-  File bin\686\libgigedit-3.dll
+  File bin\686\libgigedit-4.dll
   SetOutPath "$INSTDIR\${SUBDIR_32_BIT}\plugins"
   File bin\686\plugins\libgigeditlinuxsamplerplugin.dll
   SetOutPath "$INSTDIR\${SUBDIR_32_BIT}"
@@ -503,7 +503,7 @@ Section "libgig ${LIBGIG_VERSION}" Seclibgig
 
   libgig64:
   SetOutPath "$INSTDIR\${SUBDIR_64_BIT}"
-  File bin\64\libgig-7.dll
+  File bin\64\libgig-8.dll
   File bin\64\libakai-0.dll
   File bin\64\rifftree.exe
   File bin\64\dlsdump.exe
@@ -529,12 +529,12 @@ Section "libgig ${LIBGIG_VERSION}" Seclibgig
   ; QSampler needs the 32 bit libgig dll
   libgigForQsampler:
   SetOutPath "$INSTDIR\${SUBDIR_32_BIT}"
-  File bin\686sse\libgig-7.dll
+  File bin\686sse\libgig-8.dll
   Goto libgig32common
 
   libgig686sse:
   SetOutPath "$INSTDIR\${SUBDIR_32_BIT}"
-  File bin\686sse\libgig-7.dll
+  File bin\686sse\libgig-8.dll
   File bin\686sse\libakai-0.dll
   File bin\686sse\rifftree.exe
   File bin\686sse\dlsdump.exe
@@ -553,7 +553,7 @@ Section "libgig ${LIBGIG_VERSION}" Seclibgig
 
   libgig686:
   SetOutPath "$INSTDIR\${SUBDIR_32_BIT}"
-  File bin\686\libgig-7.dll
+  File bin\686\libgig-8.dll
   File bin\686\libakai-0.dll
   File bin\686\rifftree.exe
   File bin\686\dlsdump.exe
