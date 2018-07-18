@@ -41,10 +41,10 @@ OutFile "linuxsampler_${RELEASE_DATE}_setup.exe"
 
 ; Java Runtime Environment, needed for JSampler
 !define JRE_VERSION "1.6"
-; jre-8u151-windows-i586.exe:
-!define JRE_32_URL "http://javadl.oracle.com/webapps/download/AutoDL?BundleId=227550_e758a0de34e24606bca991d704f6dcbf"
-; jre-8u151-windows-x64.exe:
-!define JRE_64_URL "http://javadl.oracle.com/webapps/download/AutoDL?BundleId=227552_e758a0de34e24606bca991d704f6dcbf"
+; jre-8u181-windows-i586.exe:
+!define JRE_32_URL "http://javadl.oracle.com/webapps/download/AutoDL?BundleId=234472_96a7b8442fe848ef90c96a2fad6ed6d1"
+; jre-8u181-windows-x64.exe:
+!define JRE_64_URL "http://javadl.oracle.com/webapps/download/AutoDL?BundleId=234474_96a7b8442fe848ef90c96a2fad6ed6d1"
 
 ; The default installation directory
 InstallDir "$PROGRAMFILES64\LinuxSampler"
